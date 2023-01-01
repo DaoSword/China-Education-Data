@@ -1,5 +1,11 @@
 # 中国教育数据 China Education Data
 
+![GitHub last commit](https://img.shields.io/github/last-commit/DaoSword/China-Education-Data?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/DaoSword/China-Education-Data?color=orange&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/DaoSword/China-Education-Data?color=blueviolet&style=flat-square)
+![GitHub watchers](https://img.shields.io/github/watchers/DaoSword/China-Education-Data?color=ff69b4&style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/DaoSword/China-Education-Data?style=flat-square)
+
 ## 简介 Introduction
 
 Collection of China's educational data and information, including colleges, high schools, midddle schools, education groups, etc.
