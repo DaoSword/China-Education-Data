@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="中国教育数据项目-说明文档">中国教育数据项目-说明文档</h1>
+<p><strong><em>version: 2023-01-04</em></strong></p>
+<div class="toc-container"><p class="toc-title">Table of Contents</p><ul class="toc-list"><li><span><a class="toc-h2" href="#1-高等教育数据收集">1 高等教育数据收集</a><span class="dots"></span></span><ul><li><span><a class="toc-h3" href="#11-高等教育数据源清单">1.1 高等教育数据源清单</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#12-高等教育数据收集流程图">1.2 高等教育数据收集流程图</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#13-各数据源的数据获取流程">1.3 各数据源的数据获取流程</a><span class="dots"></span></span><ul><li><span><a class="toc-h4" href="#131-学校名单">1.3.1 学校名单</a><span class="dots"></span></span><ul><li><span><a class="toc-h5" href="#1311-教育部-全国高等学校名单">1.3.1.1 教育部-全国高等学校名单</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#1312-学校名单补充">1.3.1.2 学校名单补充</a><span class="dots"></span></span></li></ul></li><li><span><a class="toc-h4" href="#132-分类名单">1.3.2 分类名单</a><span class="dots"></span></span><ul><li><span><a class="toc-h5" href="#1321-掌上高考-各类名单">1.3.2.1 掌上高考-各类名单</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#1322-中国教育在线-各类名单">1.3.2.2 中国教育在线-各类名单</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#1323-百家号-985高校入选时间批次">1.3.2.3 百家号-985高校入选时间批次</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#1324-高考资讯网-985工程高校实力划分">1.3.2.4 高考资讯网-985工程高校实力划分</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#1325-腾讯新闻-新一轮双一流计划学科分类">1.3.2.5 腾讯新闻-新一轮双一流计划学科分类</a><span class="dots"></span></span></li></ul></li><li><span><a class="toc-h4" href="#133-综合信息">1.3.3 综合信息</a><span class="dots"></span></span><ul><li><span><a class="toc-h5" href="#1331-掌上高考-学校概况">1.3.3.1 掌上高考-学校概况</a><span class="dots"></span></span></li></ul></li><li><span><a class="toc-h4" href="#134-经费预算">1.3.4 经费预算</a><span class="dots"></span></span><ul><li><span><a class="toc-h5" href="#1341-青塔-2022年预算经费">1.3.4.1 青塔-2022年预算经费</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#1342-聚汇数据-2022年财政拨款">1.3.4.2 聚汇数据-2022年财政拨款</a><span class="dots"></span></span></li></ul></li></ul></li><li><span><a class="toc-h3" href="#14-高等教育宽表构建">1.4 高等教育宽表构建</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#15-数据补全">1.5 数据补全</a><span class="dots"></span></span><ul><li><span><a class="toc-h4" href="#151-学校综合信息补全v20221213">1.5.1 学校综合信息补全v20221213</a><span class="dots"></span></span></li></ul></li></ul></li><li><span><a class="toc-h2" href="#2-中等教育数据收集">2 中等教育数据收集</a><span class="dots"></span></span><ul><li><span><a class="toc-h3" href="#21-中等教育数据源清单">2.1 中等教育数据源清单</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#22-中等教育数据收集流程图">2.2 中等教育数据收集流程图</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#23-各数据源的数据获取流程">2.3 各数据源的数据获取流程</a><span class="dots"></span></span><ul><li><span><a class="toc-h4" href="#231-全国各省中学排名">2.3.1 全国/各省中学排名</a><span class="dots"></span></span><ul><li><span><a class="toc-h5" href="#2311-出国留学网-全国高中排名100强">2.3.1.1 出国留学网-全国高中排名100强</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#2312-个人图书馆-全国高中排名名单">2.3.1.2 个人图书馆-全国高中排名名单</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#2313-郁金香-全国各省市地区重点高中前十排名">2.3.1.3 郁金香-全国各省市地区重点高中前十排名</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#2314-中职招生网-全国31省市高中top5名单">2.3.1.4 中职招生网-全国31省市高中TOP5名单</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#2315-买购网-各省top10中学名单">2.3.1.5 买购网-各省top10中学名单</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#2316-买购网-全国16所能保送的外国语学校排行榜">2.3.1.6 买购网-全国16所能保送的外国语学校排行榜</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#2317-买购网-中国十大国际高中学校排名">2.3.1.7 买购网-中国十大国际高中学校排名</a><span class="dots"></span></span></li></ul></li><li><span><a class="toc-h4" href="#232-全国中学基本信息">2.3.2 全国中学基本信息</a><span class="dots"></span></span><ul><li><span><a class="toc-h5" href="#2321-我要搜学网">2.3.2.1 我要搜学网</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#2322-学校大全">2.3.2.2 学校大全</a><span class="dots"></span></span></li></ul></li></ul></li><li><span><a class="toc-h3" href="#24-中等教育宽表构建">2.4 中等教育宽表构建</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#25-数据补全">2.5 数据补全</a><span class="dots"></span></span><ul><li><span><a class="toc-h4" href="#251-中学信息补全v20221213">2.5.1 中学信息补全v20221213</a><span class="dots"></span></span></li><li><span><a class="toc-h4" href="#252-中学官网数据补全v20221220">2.5.2 中学官网数据补全v20221220</a><span class="dots"></span></span></li></ul></li></ul></li><li><span><a class="toc-h2" href="#3-教育集团数据收集">3 教育集团数据收集</a><span class="dots"></span></span><ul><li><span><a class="toc-h3" href="#31-教育集团数据源清单">3.1 教育集团数据源清单</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#32-教育集团数据收集流程图">3.2 教育集团数据收集流程图</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#33-各数据源的数据获取流程">3.3 各数据源的数据获取流程</a><span class="dots"></span></span><ul><li><span><a class="toc-h4" href="#331-职业教育集团名单">3.3.1 职业教育集团名单</a><span class="dots"></span></span></li><li><span><a class="toc-h4" href="#332-基础教育集团名单">3.3.2 基础教育集团名单</a><span class="dots"></span></span></li></ul></li><li><span><a class="toc-h3" href="#34-教育集团宽表构建">3.4 教育集团宽表构建</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#35-数据补全">3.5 数据补全</a><span class="dots"></span></span><ul><li><span><a class="toc-h4" href="#351-职业教育集团信息补全_ljj_20221215">3.5.1 职业教育集团信息补全_LJJ_20221215</a><span class="dots"></span></span></li><li><span><a class="toc-h4" href="#352-基础教育集团信息补全_ljj_20221216">3.5.2 基础教育集团信息补全_LJJ_20221216</a><span class="dots"></span></span></li></ul></li></ul></li><li><span><a class="toc-h2" href="#4-校外教培数据收集">4 校外教培数据收集</a><span class="dots"></span></span><ul><li><span><a class="toc-h3" href="#41-校外教培数据源清单">4.1 校外教培数据源清单</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#42-校外教培数据收集流程图">4.2 校外教培数据收集流程图</a><span class="dots"></span></span></li><li><span><a class="toc-h3" href="#43-各数据源的数据获取流程">4.3 各数据源的数据获取流程</a><span class="dots"></span></span><ul><li><span><a class="toc-h4" href="#431-教育部校外培训机构名单">4.3.1 教育部校外培训机构名单</a><span class="dots"></span></span></li><li><span><a class="toc-h4" href="#432-我要搜学网-培训机构信息表">4.3.2 我要搜学网-培训机构信息表</a><span class="dots"></span></span></li><li><span><a class="toc-h4" href="#433-学校大全-培训机构信息表">4.3.3 学校大全-培训机构信息表</a><span class="dots"></span></span></li><li><span><a class="toc-h4" href="#434-买购网-各类教培品牌榜单">4.3.4 买购网-各类教培品牌榜单</a><span class="dots"></span></span><ul><li><span><a class="toc-h5" href="#4341-民办培训品牌大全">4.3.4.1 民办培训品牌大全</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#4342-教培品牌细分类top10名单">4.3.4.2 教培品牌细分类top10名单</a><span class="dots"></span></span></li><li><span><a class="toc-h5" href="#4343-头部城市教培品牌top10名单">4.3.4.3 头部城市教培品牌top10名单</a><span class="dots"></span></span></li></ul></li><li><span><a class="toc-h4" href="#435-品牌网-教培品牌大全">4.3.5 品牌网-教培品牌大全</a><span class="dots"></span></span></li></ul></li><li><span><a class="toc-h3" href="#44-校外教培宽表构建">4.4 校外教培宽表构建</a><span class="dots"></span></span></li></ul></li><li><span><a class="toc-h2" href="#5-贡献者与鸣谢名单">5 贡献者与鸣谢名单</a><span class="dots"></span></span></li></ul></div><p>本文档对中国教育数据项目的整体流程进行说明，并附带部分数据和操作样例，章节安排如下：</p>
+<ul>
+<li><p><strong>第一章-高等教育数据收集</strong></p>
+</li>
+<li><p><strong>第二章-中等教育数据收集</strong></p>
+</li>
+<li><p><strong>第三章-教育集团数据收集</strong></p>
+</li>
+<li><p><strong>第四章-校外教培数据收集</strong></p>
+</li>
+<li><p><strong>第五章-贡献者与鸣谢名单</strong></p>
+</li>
+</ul>
+<p>前四章依次介绍了高等教育、中等教育、教育集团、校外教培的数据收集流程，每章介绍的主要内容有：</p>
+<ul>
+<li><p><em>数据源清单</em></p>
+</li>
+<li><p><em>数据收集流程图</em></p>
+</li>
+<li><p><em>各数据源的数据获取流程</em></p>
+</li>
+<li><p><em>数据宽表构建</em></p>
+</li>
+<li><p><em>数据补全计划</em></p>
+</li>
+</ul>
+<p>第五章列出了在数据收集工作中提供了各类帮助的人员名单。</p>
+<h2 class="atx" id="1-高等教育数据收集">1 高等教育数据收集</h2>
+<p>高等教育数据收集的内容位于“数据收集-高等教育”文件夹内，由六部分构成，如下：</p>
+<p><img alt="数据收集-高等教育.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86-%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2.png"></p>
+<ol>
+<li><p>“数据源”文件夹，其中分类汇总了各数据源获取到的原始数据，以及数据源清单；</p>
+</li>
+<li><p>“数据收集流程”文件夹，内容包含高等教育数据收集的流程图；</p>
+</li>
+<li><p>“中间结果”文件夹，用于保存数据合并过程中的一些中间结果，方便人工核验数据质量和准确性；</p>
+</li>
+<li><p>“数据宽表”文件夹，保存了当前各数据源的数据依照数据收集流程整理合并后得到的完整数据宽表；</p>
+</li>
+<li><p>“补全计划”文件夹，存放了人工已完成和计划收集并补全数据宽表中缺失信息的各类数据；</p>
+</li>
+<li><p>“高等教育宽表构建.ipynb”，是进行数据处理和得到高等教育数据宽表的python代码。</p>
+</li>
+</ol>
+<h3 class="atx" id="11-高等教育数据源清单">1.1 高等教育数据源清单</h3>
+<p>高等教育数据收集过程中积累的数据源信息，汇总成表格 <strong>高等教育数据源清单.csv</strong>：</p>
+<p><img alt="高等教育数据源清单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E6%95%B0%E6%8D%AE%E6%BA%90%E6%B8%85%E5%8D%95.png"></p>
+<p>每个数据源包括的信息有：</p>
+<ul>
+<li><p>数据源名称</p>
+</li>
+<li><p>数据源类型（当前分为学校名单、分类名单、综合信息、经费预算四类）</p>
+</li>
+<li><p>数据来源</p>
+</li>
+<li><p>数据涉及地区（全国或特定省市等）</p>
+</li>
+<li><p>数据源内容说明</p>
+</li>
+<li><p>数据源网址链接</p>
+</li>
+</ul>
+<h3 class="atx" id="12-高等教育数据收集流程图">1.2 高等教育数据收集流程图</h3>
+<p>高等教育数据收集的流程主要由五部分构成：</p>
+<ul>
+<li><p>以教育部公布名单为基础构建全国高等学校名单</p>
+</li>
+<li><p>各种高校分类名单信息收集与整合</p>
+</li>
+<li><p>各高校综合信息收集与整合</p>
+</li>
+<li><p>头部高校经费数据收集</p>
+</li>
+<li><p>缺失数据增补</p>
+</li>
+</ul>
+<p>流程图如下：</p>
+<p><img alt="高等教育数据收集流程v20230104.drawio.svg" src="file:///Users/zhangchi/China-Education-Data/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86-%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2/02-%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E6%B5%81%E7%A8%8B/%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E6%B5%81%E7%A8%8Bv20230104.drawio.svg"></p>
+<h3 class="atx" id="13-各数据源的数据获取流程">1.3 各数据源的数据获取流程</h3>
+<h4 class="atx" id="131-学校名单">1.3.1 学校名单</h4>
+<h5 class="atx" id="1311-教育部-全国高等学校名单">1.3.1.1 教育部-全国高等学校名单</h5>
+<p>访问 <a href="http://www.moe.gov.cn/jyb_xxgk/s5743/s5744/A03/202206/t20220617_638352.html">教育部-全国高等学校名单</a> 页面：</p>
+<p><img alt="教育部-全国高等学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%95%99%E8%82%B2%E9%83%A8-%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+<p>可以直接下载到两份名单：</p>
+<ul>
+<li><p><a href="http://www.moe.gov.cn/jyb_xxgk/s5743/s5744/A03/202206/W020221128575365987397.xls">全国普通高等学校名单</a></p>
+</li>
+<li><p><a href="http://www.moe.gov.cn/jyb_xxgk/s5743/s5744/A03/202206/W020220617499137882559.xls">全国成人高等学校名单</a></p>
+</li>
+</ul>
+<p>整理后得到两份数据表：</p>
+<ul>
+<li><p><strong>全国普通高等学校名单.csv</strong></p>
+<p><img alt="教育部-全国普通高等学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%95%99%E8%82%B2%E9%83%A8-%E5%85%A8%E5%9B%BD%E6%99%AE%E9%80%9A%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+</li>
+<li><p><strong>全国成人高等学校名单.csv</strong></p>
+<p><img alt="教育部-全国成人高等学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%95%99%E8%82%B2%E9%83%A8-%E5%85%A8%E5%9B%BD%E6%88%90%E4%BA%BA%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+</li>
+</ul>
+<h5 class="atx" id="1312-学校名单补充">1.3.1.2 学校名单补充</h5>
+<p>对于教育部名单中未收录的部分学校，在收集过程中建立了补充名单 <strong>人工增补-学校名单补充.csv</strong>：</p>
+<p><img alt="人工增补-学校名单补充.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E4%BA%BA%E5%B7%A5%E5%A2%9E%E8%A1%A5-%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95%E8%A1%A5%E5%85%85.png"></p>
+<p>名单中除学校名称外，还通过查询对应学校的百度百科词条，补充了五个字段：</p>
+<ul>
+<li><p>主管部门</p>
+</li>
+<li><p>所在省份</p>
+</li>
+<li><p>所在城市</p>
+</li>
+<li><p>办学层次</p>
+</li>
+<li><p>学校性质</p>
+</li>
+</ul>
+<h4 class="atx" id="132-分类名单">1.3.2 分类名单</h4>
+<h5 class="atx" id="1321-掌上高考-各类名单">1.3.2.1 掌上高考-各类名单</h5>
+<p>访问 <a href="https://www.gaokao.cn/school/search">掌上高考-查学校页面</a></p>
+<p><img alt="掌上高考-学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+<p>在“院校大全”搜索设置中的“院校特色”选项下，分别选择红框中的标签分类，可以得到双一流、教务部直属、中央部委直属、强基计划、双高计划五类学校的名单。整理每类名单后，得到五份数据表：</p>
+<ul>
+<li><p><strong>掌上高考-双一流学校名单.csv</strong></p>
+<p><img alt="掌上高考-双一流学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E5%8F%8C%E4%B8%80%E6%B5%81%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+</li>
+<li><p><strong>掌上高考-教育部直属学校名单.csv</strong></p>
+<p><img alt="掌上高考-教育部直属学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E6%95%99%E8%82%B2%E9%83%A8%E7%9B%B4%E5%B1%9E%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+</li>
+<li><p><strong>掌上高考-中央部委直属学校名单.csv</strong></p>
+<p><img alt="掌上高考-中央部委直属学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E4%B8%AD%E5%A4%AE%E9%83%A8%E5%A7%94%E7%9B%B4%E5%B1%9E%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+</li>
+<li><p><strong>掌上高考-强基计划学校名单.csv</strong></p>
+<p><img alt="掌上高考-强基计划学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E5%BC%BA%E5%9F%BA%E8%AE%A1%E5%88%92%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+</li>
+<li><p><strong>掌上高考-双高计划学校名单.csv</strong></p>
+<p><img alt="掌上高考-双高计划学校名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E5%8F%8C%E9%AB%98%E8%AE%A1%E5%88%92%E5%AD%A6%E6%A0%A1%E5%90%8D%E5%8D%95.png"></p>
+</li>
+</ul>
+<h5 class="atx" id="1322-中国教育在线-各类名单">1.3.2.2 中国教育在线-各类名单</h5>
+<p>访问 <a href="https://www.zhijiao.cn/mingdan.shtml">中国教育在线-大学信息查询</a> 页面：</p>
+<p><img alt="中国教育在线-大学信息查询.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E4%B8%AD%E5%9B%BD%E6%95%99%E8%82%B2%E5%9C%A8%E7%BA%BF-%E5%A4%A7%E5%AD%A6%E4%BF%A1%E6%81%AF%E6%9F%A5%E8%AF%A2.png"></p>
+<p>选择对应的名单分类，可查询相应的高校列表。以“第一轮双一流大学”为例，点击进入 <a href="https://www.zhijiao.cn/syl.shtml">“第一轮双一流”建设高校及建设学科名单</a> 页面：</p>
+<p><img alt="中国教育在线-第一轮双一流大学名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E4%B8%AD%E5%9B%BD%E6%95%99%E8%82%B2%E5%9C%A8%E7%BA%BF-%E7%AC%AC%E4%B8%80%E8%BD%AE%E5%8F%8C%E4%B8%80%E6%B5%81%E5%A4%A7%E5%AD%A6%E5%90%8D%E5%8D%95.png"></p>
+<p>可以查到对应的名单信息，整理后得到数据表 <strong>中国教育在线-第一轮双一流大学名单.csv</strong>：</p>
+<p><img alt="中国教育在线-第一轮双一流大学名单-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E4%B8%AD%E5%9B%BD%E6%95%99%E8%82%B2%E5%9C%A8%E7%BA%BF-%E7%AC%AC%E4%B8%80%E8%BD%AE%E5%8F%8C%E4%B8%80%E6%B5%81%E5%A4%A7%E5%AD%A6%E5%90%8D%E5%8D%95-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+<p>按照类似的方法，整理得到以下数据表：</p>
+<ul>
+<li><p><strong>中国教育在线-第二轮双一流大学名单.csv</strong></p>
+<p><img alt="中国教育在线-第二轮双一流大学名单-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E4%B8%AD%E5%9B%BD%E6%95%99%E8%82%B2%E5%9C%A8%E7%BA%BF-%E7%AC%AC%E4%BA%8C%E8%BD%AE%E5%8F%8C%E4%B8%80%E6%B5%81%E5%A4%A7%E5%AD%A6%E5%90%8D%E5%8D%95-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+</li>
+<li><p><strong>中国教育在线-国家骨干高职院校名单.csv</strong></p>
+<p><img alt="中国教育在线-国家骨干高职院校名单-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E4%B8%AD%E5%9B%BD%E6%95%99%E8%82%B2%E5%9C%A8%E7%BA%BF-%E5%9B%BD%E5%AE%B6%E9%AA%A8%E5%B9%B2%E9%AB%98%E8%81%8C%E9%99%A2%E6%A0%A1%E5%90%8D%E5%8D%95-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+</li>
+<li><p><strong>中国教育在线-国家示范性高职院校名单.csv</strong></p>
+<p><img alt="中国教育在线-国家示范性高职院校名单-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E4%B8%AD%E5%9B%BD%E6%95%99%E8%82%B2%E5%9C%A8%E7%BA%BF-%E5%9B%BD%E5%AE%B6%E7%A4%BA%E8%8C%83%E6%80%A7%E9%AB%98%E8%81%8C%E9%99%A2%E6%A0%A1%E5%90%8D%E5%8D%95-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+</li>
+<li><p><strong>中国教育在线-中外合作办学名单.csv</strong></p>
+<p><img alt="中国教育在线-中外合作办学名单-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E4%B8%AD%E5%9B%BD%E6%95%99%E8%82%B2%E5%9C%A8%E7%BA%BF-%E4%B8%AD%E5%A4%96%E5%90%88%E4%BD%9C%E5%8A%9E%E5%AD%A6%E5%90%8D%E5%8D%95-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+</li>
+</ul>
+<h5 class="atx" id="1323-百家号-985高校入选时间批次">1.3.2.3 百家号-985高校入选时间批次</h5>
+<p>访问 <a href="https://baijiahao.baidu.com/s?id=1747373085036941612&amp;wfr=spider&amp;for=pc">39所985高校入选时间</a> 页面：</p>
+<p><img alt="百家号-985高校入选时间批次汇总.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E7%99%BE%E5%AE%B6%E5%8F%B7-985%E9%AB%98%E6%A0%A1%E5%85%A5%E9%80%89%E6%97%B6%E9%97%B4%E6%89%B9%E6%AC%A1%E6%B1%87%E6%80%BB.png"></p>
+<p>可以找到各985高校的入选时间，整理后得到数据表 <strong>百家号-985高校入选时间批次汇总.csv</strong>：</p>
+<p><img alt="百家号-985高校入选时间批次汇总-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E7%99%BE%E5%AE%B6%E5%8F%B7-985%E9%AB%98%E6%A0%A1%E5%85%A5%E9%80%89%E6%97%B6%E9%97%B4%E6%89%B9%E6%AC%A1%E6%B1%87%E6%80%BB-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+<h5 class="atx" id="1324-高考资讯网-985工程高校实力划分">1.3.2.4 高考资讯网-985工程高校实力划分</h5>
+<p>访问 <a href="https://www.imrtvu.com/gklq/19372.html">高考资讯网-985工程高校批次名单及实力划分</a> 页面：</p>
+<p><img alt="高考资讯网-985工程高校批次名单及实力划分-批次名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E9%AB%98%E8%80%83%E8%B5%84%E8%AE%AF%E7%BD%91-985%E5%B7%A5%E7%A8%8B%E9%AB%98%E6%A0%A1%E6%89%B9%E6%AC%A1%E5%90%8D%E5%8D%95%E5%8F%8A%E5%AE%9E%E5%8A%9B%E5%88%92%E5%88%86-%E6%89%B9%E6%AC%A1%E5%90%8D%E5%8D%95.png"></p>
+<p>可以找到985工程高校评选批次名单和实力梯队分类信息</p>
+<p><img alt="高考资讯网-985工程高校批次名单及实力划分-实力划分.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E9%AB%98%E8%80%83%E8%B5%84%E8%AE%AF%E7%BD%91-985%E5%B7%A5%E7%A8%8B%E9%AB%98%E6%A0%A1%E6%89%B9%E6%AC%A1%E5%90%8D%E5%8D%95%E5%8F%8A%E5%AE%9E%E5%8A%9B%E5%88%92%E5%88%86-%E5%AE%9E%E5%8A%9B%E5%88%92%E5%88%86.png"></p>
+<p>整理后得到数据表 <strong>高考资讯网-985工程高校批次名单及实力划分.csv</strong>：</p>
+<p><img alt="高考资讯网-985工程高校批次名单及实力划分-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E9%AB%98%E8%80%83%E8%B5%84%E8%AE%AF%E7%BD%91-985%E5%B7%A5%E7%A8%8B%E9%AB%98%E6%A0%A1%E6%89%B9%E6%AC%A1%E5%90%8D%E5%8D%95%E5%8F%8A%E5%AE%9E%E5%8A%9B%E5%88%92%E5%88%86-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+<h5 class="atx" id="1325-腾讯新闻-新一轮双一流计划学科分类">1.3.2.5 腾讯新闻-新一轮双一流计划学科分类</h5>
+<p>访问 <a href="https://view.inews.qq.com/a/20220210A01S6700">腾讯新闻-新一轮双一流计划名单</a> 页面：</p>
+<p><img alt="腾讯新闻-新一轮双一流计划名单.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB-%E6%96%B0%E4%B8%80%E8%BD%AE%E5%8F%8C%E4%B8%80%E6%B5%81%E8%AE%A1%E5%88%92%E5%90%8D%E5%8D%95.png"></p>
+<p>可以找到2021-2025年“双一流”建设高校名单（建议稿）内容，整理后得到数据表 <strong>腾讯新闻-新一轮双一流计划名单.xlsx</strong>：</p>
+<p><img alt="腾讯新闻-新一轮双一流计划名单-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB-%E6%96%B0%E4%B8%80%E8%BD%AE%E5%8F%8C%E4%B8%80%E6%B5%81%E8%AE%A1%E5%88%92%E5%90%8D%E5%8D%95-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+<h4 class="atx" id="133-综合信息">1.3.3 综合信息</h4>
+<h5 class="atx" id="1331-掌上高考-学校概况">1.3.3.1 掌上高考-学校概况</h5>
+<p>在 <a href="https://www.gaokao.cn/school/search">掌上高考-查学校页面</a> 的搜索框中直接输入需要查询的学校名称（下文以“厦门大学为例”），点击进入搜索到的学校介绍页面：</p>
+<p><img alt="掌上高考-学校基本信息1.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E5%AD%A6%E6%A0%A1%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF1.png"></p>
+<p>从页面抬头信息栏的红框区域，可以得到下列信息：</p>
+<ul>
+<li><p>所在省份</p>
+</li>
+<li><p>所在城市</p>
+</li>
+<li><p>办学层次</p>
+</li>
+<li><p>学校类型</p>
+</li>
+<li><p>学校性质</p>
+</li>
+<li><p>各类属性标签（如211工程、985工程、双一流等）</p>
+</li>
+<li><p>学校官网</p>
+</li>
+</ul>
+<p><img alt="掌上高考-学校基本信息2.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E5%AD%A6%E6%A0%A1%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF2.png"></p>
+<p>在同页面下方的“基本信息”栏中，可以得到的信息有：</p>
+<ul>
+<li><p>创建时间</p>
+</li>
+<li><p>占地面积（亩）</p>
+</li>
+<li><p>主管单位</p>
+</li>
+<li><p>学校地址</p>
+</li>
+</ul>
+<p>将各学校以上信息和通过其他数据源查找补全的信息汇总后，整理得到全国高校的基本信息表 <strong>掌上高考-学校综合信息表</strong>：</p>
+<p><img alt="掌上高考-学校综合信息表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E6%8E%8C%E4%B8%8A%E9%AB%98%E8%80%83-%E5%AD%A6%E6%A0%A1%E7%BB%BC%E5%90%88%E4%BF%A1%E6%81%AF%E8%A1%A8.png"></p>
+<h4 class="atx" id="134-经费预算">1.3.4 经费预算</h4>
+<h5 class="atx" id="1341-青塔-2022年预算经费">1.3.4.1 青塔-2022年预算经费</h5>
+<p>访问 <a href="https://www.maigoo.com/news/627063.html">2022年全国高校预算经费汇总</a> 页面：</p>
+<p><img alt="青塔-2022年全国高校预算经费汇总.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E9%9D%92%E5%A1%94-2022%E5%B9%B4%E5%85%A8%E5%9B%BD%E9%AB%98%E6%A0%A1%E9%A2%84%E7%AE%97%E7%BB%8F%E8%B4%B9%E6%B1%87%E6%80%BB.png"></p>
+<p>可以找到各学校2022年的预算总收入和本年度收入统计，整理后得到数据表 <strong>青塔-2022年全国高校预算经费汇总.xlsx</strong>：</p>
+<p><img alt="青塔-2022年全国高校预算经费汇总-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E9%9D%92%E5%A1%94-2022%E5%B9%B4%E5%85%A8%E5%9B%BD%E9%AB%98%E6%A0%A1%E9%A2%84%E7%AE%97%E7%BB%8F%E8%B4%B9%E6%B1%87%E6%80%BB-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+<h5 class="atx" id="1342-聚汇数据-2022年财政拨款">1.3.4.2 聚汇数据-2022年财政拨款</h5>
+<p>访问 <a href="https://edu.gotohui.com/list/177516.html">聚汇数据-2022年中央部署高校财政拨款排名表</a> 页面：</p>
+<p><img alt="聚汇数据-2022年中央部署高校财政拨款统计.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E8%81%9A%E6%B1%87%E6%95%B0%E6%8D%AE-2022%E5%B9%B4%E4%B8%AD%E5%A4%AE%E9%83%A8%E7%BD%B2%E9%AB%98%E6%A0%A1%E8%B4%A2%E6%94%BF%E6%8B%A8%E6%AC%BE%E7%BB%9F%E8%AE%A1.png"></p>
+<p>可以找到各中央部署高校2022年的财政拨款统计情况，整理后得到数据表 <strong>聚汇数据-2022年中央部署高校财政拨款统计.xlsx</strong>：</p>
+<p><img alt="聚汇数据-2022年中央部署高校财政拨款统计-数据表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E8%81%9A%E6%B1%87%E6%95%B0%E6%8D%AE-2022%E5%B9%B4%E4%B8%AD%E5%A4%AE%E9%83%A8%E7%BD%B2%E9%AB%98%E6%A0%A1%E8%B4%A2%E6%94%BF%E6%8B%A8%E6%AC%BE%E7%BB%9F%E8%AE%A1-%E6%95%B0%E6%8D%AE%E8%A1%A8.png"></p>
+<h3 class="atx" id="14-高等教育宽表构建">1.4 高等教育宽表构建</h3>
+<p>运行 <strong><em>高等教育宽表构建.ipynb</em></strong> 中的代码，进行全部数据的合并，得到 <strong>高等教育数据宽表.csv</strong>：</p>
+<p><img alt="高等教育数据宽表.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8.png"></p>
+<p>数据处理与合并过程中应用的方法与逻辑，已在代码中通过逐行注释的方式进行呈现，构成本文档的一部分补充内容，在文档正文中不再占用过多篇幅进行展开介绍。</p>
+<p>宽表中各字段的含义和数据样例，可参考 <strong>高等教育数据宽表字段说明.csv</strong>：</p>
+<p><img alt="高等教育数据宽表字段说明.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E.png"></p>
+<h3 class="atx" id="15-数据补全">1.5 数据补全</h3>
+<p>当前已完成的数据补全如下：</p>
+<h4 class="atx" id="151-学校综合信息补全v20221213">1.5.1 学校综合信息补全v20221213</h4>
+<p>对现有宽表中缺失信息较多的高校，从其他数据源查找和补全缺少的字段，得到数据表 <strong>学校综合信息补全v20221209_LJJ_20221213.xlsx</strong>：</p>
+<p><img alt="学校综合信息补全v20221209_LJJ_20221213.png" src="file:///Users/zhangchi/China-Education-Data/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/higher_education/%E5%AD%A6%E6%A0%A1%E7%BB%BC%E5%90%88%E4%BF%A1%E6%81%AF%E8%A1%A5%E5%85%A8v20221209_LJJ_20221213.png"></p>
+<p>表中信息已补充至当前最新版本的高等教育数据宽表中。</p>
+<p><strong>Note: 后续章节内容待更新至最新版本，仅供参考</strong></p>
+<h2 class="atx" id="2-中等教育数据收集">2 中等教育数据收集</h2>
+<h3 class="atx" id="21-中等教育数据源清单">2.1 中等教育数据源清单</h3>
+<p>中学数据收集过程中积累的数据源信息，汇总成表格 <strong>中学数据源清单.xlsx</strong>：</p>
+<p><img alt="中学数据源清单.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AD%E5%AD%A6%E6%95%B0%E6%8D%AE%E6%BA%90%E6%B8%85%E5%8D%95.png"></p>
+<p>其中内容包括：</p>
+<ul>
+<li><p>数据源名称</p>
+</li>
+<li><p>数据来源</p>
+</li>
+<li><p>数据涉及地区</p>
+</li>
+<li><p>数据内容说明</p>
+</li>
+<li><p>数据网址链接</p>
+</li>
+</ul>
+<h3 class="atx" id="22-中等教育数据收集流程图">2.2 中等教育数据收集流程图</h3>
+<p>中等教育数据收集的流程主要由三部分构成：</p>
+<ul>
+<li><p>构建头部学校名单</p>
+</li>
+<li><p>补充其他学校和更多字段信息</p>
+</li>
+<li><p>缺失数据增补</p>
+</li>
+</ul>
+<p>流程示意图如下：</p>
+<p><img alt="中学信息收集流程v20221213.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86-%E4%B8%AD%E7%AD%89%E6%95%99%E8%82%B2/02-%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E6%B5%81%E7%A8%8B/%E4%B8%AD%E5%AD%A6%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E6%B5%81%E7%A8%8Bv20221213.png"></p>
+<h3 class="atx" id="23-各数据源的数据获取流程">2.3 各数据源的数据获取流程</h3>
+<p>中等教育各数据源的数据获取流程如下：</p>
+<h4 class="atx" id="231-全国各省中学排名">2.3.1 全国/各省中学排名</h4>
+<h5 class="atx" id="2311-出国留学网-全国高中排名100强">2.3.1.1 出国留学网-全国高中排名100强</h5>
+<p>访问 <a href="https://www.liuxue86.com/k_%E5%85%A8%E5%9B%BD%E9%AB%98%E4%B8%AD%E6%8E%92%E5%90%8D/">出国留学网-全国高中排名</a> 页面：</p>
+<p><img alt="出国留学网-全国高中排名100强_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E5%87%BA%E5%9B%BD%E7%95%99%E5%AD%A6%E7%BD%91-%E5%85%A8%E5%9B%BD%E9%AB%98%E4%B8%AD%E6%8E%92%E5%90%8D100%E5%BC%BA_%E7%BD%91%E9%A1%B5.png"></p>
+<p>整理后得到数据表 <strong>出国留学网-全国高中排名100强.xlsx</strong>：</p>
+<p><img alt="出国留学网-全国高中排名100强_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E5%87%BA%E5%9B%BD%E7%95%99%E5%AD%A6%E7%BD%91-%E5%85%A8%E5%9B%BD%E9%AB%98%E4%B8%AD%E6%8E%92%E5%90%8D100%E5%BC%BA_%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 class="atx" id="2312-个人图书馆-全国高中排名名单">2.3.1.2 个人图书馆-全国高中排名名单</h5>
+<p>访问 <a href="http://www.360doc.com/content/22/0825/13/17747993_1045237937.shtm">个人图书馆-2022中国高中排名</a> 页面：</p>
+<p><img alt="个人图书馆-2022中国高中排名_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86-2022%E4%B8%AD%E5%9B%BD%E9%AB%98%E4%B8%AD%E6%8E%92%E5%90%8D_%E7%BD%91%E9%A1%B5.png"></p>
+<p>整理后得到数据表 <strong>个人图书馆-全国高中排名名单.xlsx</strong>：</p>
+<p><img alt="个人图书馆-2022中国高中排名_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86-2022%E4%B8%AD%E5%9B%BD%E9%AB%98%E4%B8%AD%E6%8E%92%E5%90%8D_%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 class="atx" id="2313-郁金香-全国各省市地区重点高中前十排名">2.3.1.3 郁金香-全国各省市地区重点高中前十排名</h5>
+<p>访问 <a href="https://www.yjxdezx.com/b/183089.html">郁金香-全国各省市地区重点高中前十排名</a> 页面：</p>
+<p><img alt="郁金香-全国各省市地区重点高中前十排名_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E9%83%81%E9%87%91%E9%A6%99-%E5%85%A8%E5%9B%BD%E5%90%84%E7%9C%81%E5%B8%82%E5%9C%B0%E5%8C%BA%E9%87%8D%E7%82%B9%E9%AB%98%E4%B8%AD%E5%89%8D%E5%8D%81%E6%8E%92%E5%90%8D_%E7%BD%91%E9%A1%B5.png"></p>
+<p>整理后得到数据表 <strong>郁金香-全国各省市地区重点高中前十排名.xlsx</strong>：</p>
+<p><img alt="郁金香-全国各省市地区重点高中前十排名_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E9%83%81%E9%87%91%E9%A6%99-%E5%85%A8%E5%9B%BD%E5%90%84%E7%9C%81%E5%B8%82%E5%9C%B0%E5%8C%BA%E9%87%8D%E7%82%B9%E9%AB%98%E4%B8%AD%E5%89%8D%E5%8D%81%E6%8E%92%E5%90%8D_%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 class="atx" id="2314-中职招生网-全国31省市高中top5名单">2.3.1.4 中职招生网-全国31省市高中TOP5名单</h5>
+<p>访问 <a href="https://www.wd-purchase.com/zxzx/6652.html">中职招生网-中国百强中学排名</a> 页面：</p>
+<p><img alt="中职招生网-中国百强中学排名_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AD%E8%81%8C%E6%8B%9B%E7%94%9F%E7%BD%91-%E4%B8%AD%E5%9B%BD%E7%99%BE%E5%BC%BA%E4%B8%AD%E5%AD%A6%E6%8E%92%E5%90%8D_%E7%BD%91%E9%A1%B5.png"></p>
+<p>整理后得到数据表 <strong>中职招生网-全国31省市高中TOP5名单.xlsx</strong>：</p>
+<p><img alt="中职招生网-中国百强中学排名_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AD%E8%81%8C%E6%8B%9B%E7%94%9F%E7%BD%91-%E4%B8%AD%E5%9B%BD%E7%99%BE%E5%BC%BA%E4%B8%AD%E5%AD%A6%E6%8E%92%E5%90%8D_%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 class="atx" id="2315-买购网-各省top10中学名单">2.3.1.5 买购网-各省top10中学名单</h5>
+<p>以广东省为例，访问 <a href="https://www.maigoo.com/top/400728.html">买购网-广东十大高中排行榜</a> 页面：</p>
+<p><img alt="买购网-广东十大高中排行榜_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E5%B9%BF%E4%B8%9C%E5%8D%81%E5%A4%A7%E9%AB%98%E4%B8%AD%E6%8E%92%E8%A1%8C%E6%A6%9C_%E7%BD%91%E9%A1%B5.png"></p>
+<p>按相同逻辑，逐个收集整理各省top10高中，各省对应的数据源和网页链接见“中学数据源清单”，最终得到数据表 <strong>各省top10中学名单.xlsx</strong>：</p>
+<p><img alt="买购网-广东十大高中排行榜_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E5%B9%BF%E4%B8%9C%E5%8D%81%E5%A4%A7%E9%AB%98%E4%B8%AD%E6%8E%92%E8%A1%8C%E6%A6%9C_%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 class="atx" id="2316-买购网-全国16所能保送的外国语学校排行榜">2.3.1.6 买购网-全国16所能保送的外国语学校排行榜</h5>
+<p>访问 <a href="https://www.maigoo.com/top/419496.html">买购网-全国16所能保送的外国语学校排行榜</a> 页面：</p>
+<p><img alt="买购网-全国16所能保送的外国语学校排行榜_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E5%85%A8%E5%9B%BD16%E6%89%80%E8%83%BD%E4%BF%9D%E9%80%81%E7%9A%84%E5%A4%96%E5%9B%BD%E8%AF%AD%E5%AD%A6%E6%A0%A1%E6%8E%92%E8%A1%8C%E6%A6%9C_%E7%BD%91%E9%A1%B5.png"></p>
+<p>整理后得到数据表 <strong>全国16所能保送的外国语学校排行榜.xlsx</strong>：</p>
+<p><img alt="买购网-全国16所能保送的外国语学校排行榜_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E5%85%A8%E5%9B%BD16%E6%89%80%E8%83%BD%E4%BF%9D%E9%80%81%E7%9A%84%E5%A4%96%E5%9B%BD%E8%AF%AD%E5%AD%A6%E6%A0%A1%E6%8E%92%E8%A1%8C%E6%A6%9C_%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 class="atx" id="2317-买购网-中国十大国际高中学校排名">2.3.1.7 买购网-中国十大国际高中学校排名</h5>
+<p>访问 <a href="https://www.maigoo.com/top/417099.html">买购网-中国十大国际高中学校排名</a> 页面：</p>
+<p><img alt="买购网-中国十大国际高中学校排名_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E4%B8%AD%E5%9B%BD%E5%8D%81%E5%A4%A7%E5%9B%BD%E9%99%85%E9%AB%98%E4%B8%AD%E5%AD%A6%E6%A0%A1%E6%8E%92%E5%90%8D_%E7%BD%91%E9%A1%B5.png"></p>
+<p>整理后得到数据表 <strong>中国十大国际高中学校排名.xlsx</strong>：</p>
+<p><img alt="买购网-中国十大国际高中学校排名_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E4%B8%AD%E5%9B%BD%E5%8D%81%E5%A4%A7%E5%9B%BD%E9%99%85%E9%AB%98%E4%B8%AD%E5%AD%A6%E6%A0%A1%E6%8E%92%E5%90%8D_%E8%A1%A8%E6%A0%BC.png"></p>
+<h4 class="atx" id="232-全国中学基本信息">2.3.2 全国中学基本信息</h4>
+<h5 class="atx" id="2321-我要搜学网">2.3.2.1 我要搜学网</h5>
+<p>访问 <a href="http://xuexiao.51sxue.com/slist/?t=3&amp;areaCodeS=">我要搜学网-全国中学学校列表</a> 页面：</p>
+<p><img alt="我要搜学网-全国中学学校列表_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E6%88%91%E8%A6%81%E6%90%9C%E5%AD%A6%E7%BD%91-%E5%85%A8%E5%9B%BD%E4%B8%AD%E5%AD%A6%E5%AD%A6%E6%A0%A1%E5%88%97%E8%A1%A8_%E7%BD%91%E9%A1%B5.png"></p>
+<p>列表中的每所学校，可以得到的信息包括：</p>
+<ul>
+<li><p>学校名称</p>
+</li>
+<li><p>地区</p>
+</li>
+<li><p>属性</p>
+</li>
+<li><p>性质</p>
+</li>
+<li><p>类型</p>
+</li>
+<li><p>学校地址</p>
+</li>
+<li><p>联系电话</p>
+</li>
+</ul>
+<p>整理列表中的全部学校信息后，得到数据表 <strong>我要搜学网-中学信息表.csv</strong>：</p>
+<p><img alt="我要搜学网-全国中学学校列表_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E6%88%91%E8%A6%81%E6%90%9C%E5%AD%A6%E7%BD%91-%E5%85%A8%E5%9B%BD%E4%B8%AD%E5%AD%A6%E5%AD%A6%E6%A0%A1%E5%88%97%E8%A1%A8_%E8%A1%A8%E6%A0%BC.png"></p>
+<p>在相同页面下，“筛选条件-学校类型”选项中改选“职业中学”，可以得到全国职业学校的信息：</p>
+<p><img alt="我要搜学网-全国职业中学学校列表_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E6%88%91%E8%A6%81%E6%90%9C%E5%AD%A6%E7%BD%91-%E5%85%A8%E5%9B%BD%E8%81%8C%E4%B8%9A%E4%B8%AD%E5%AD%A6%E5%AD%A6%E6%A0%A1%E5%88%97%E8%A1%A8_%E7%BD%91%E9%A1%B5.png"></p>
+<p>整理后得到数据表 <strong>我要搜学网-职业学校信息表.csv</strong>：</p>
+<p><img alt="我要搜学网-全国职业中学学校列表_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E6%88%91%E8%A6%81%E6%90%9C%E5%AD%A6%E7%BD%91-%E5%85%A8%E5%9B%BD%E8%81%8C%E4%B8%9A%E4%B8%AD%E5%AD%A6%E5%AD%A6%E6%A0%A1%E5%88%97%E8%A1%A8_%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 class="atx" id="2322-学校大全">2.3.2.2 学校大全</h5>
+<p>以北京市为例，访问 <a href="http://beijing.xuexiaodaquan.com/gaozhong/">学校大全-北京高中大全</a>：</p>
+<p><img alt="学校大全-北京高中大全_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E5%AD%A6%E6%A0%A1%E5%A4%A7%E5%85%A8-%E5%8C%97%E4%BA%AC%E9%AB%98%E4%B8%AD%E5%A4%A7%E5%85%A8_%E7%BD%91%E9%A1%B5.png"></p>
+<p>该页面下可以获得的信息包括：</p>
+<ul>
+<li><p>学校名称</p>
+</li>
+<li><p>地址</p>
+</li>
+<li><p>电话</p>
+</li>
+<li><p>网址</p>
+</li>
+</ul>
+<p>其他省份/直辖市的学校信息按照类似方式查询，整理后得到数据表 <strong>学校大全-全国高中信息表.csv</strong>：</p>
+<p><img alt="学校大全-北京高中大全_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E5%AD%A6%E6%A0%A1%E5%A4%A7%E5%85%A8-%E5%8C%97%E4%BA%AC%E9%AB%98%E4%B8%AD%E5%A4%A7%E5%85%A8_%E8%A1%A8%E6%A0%BC.png"></p>
+<p>在相同页面下，将筛选条件中的“类型”改为“北京初中”，可以获取北京的初中大全信息：</p>
+<p><img alt="学校大全-北京初中大全_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E5%AD%A6%E6%A0%A1%E5%A4%A7%E5%85%A8-%E5%8C%97%E4%BA%AC%E5%88%9D%E4%B8%AD%E5%A4%A7%E5%85%A8_%E7%BD%91%E9%A1%B5.png"></p>
+<p>其他省份/直辖市的学校信息按照类似方式查询，整理后得到数据表 <strong>学校大全-全国初中信息表.csv</strong>：</p>
+<p><img alt="学校大全-北京初中大全_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E5%AD%A6%E6%A0%A1%E5%A4%A7%E5%85%A8-%E5%8C%97%E4%BA%AC%E5%88%9D%E4%B8%AD%E5%A4%A7%E5%85%A8_%E8%A1%A8%E6%A0%BC.png"></p>
+<h3 class="atx" id="24-中等教育宽表构建">2.4 中等教育宽表构建</h3>
+<p>使用 <strong><em>中学宽表构建.ipynb</em></strong> 的代码，进行全部数据的合并，得到 <strong>中学数据宽表.xlsx</strong>：</p>
+<p><img alt="中学数据宽表.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AD%E5%AD%A6%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8.png"></p>
+<p>数据处理与合并过程中应用的方法与逻辑，已在代码中通过逐行注释的方式进行呈现，构成本文档的一部分补充内容，在文档正文中不再占用过多篇幅进行展开介绍。</p>
+<p>宽表中各字段的含义和数据样例，可参考 <strong>中学数据宽表字段说明.xlsx</strong>：</p>
+<p><img alt="中学数据宽表字段说明.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AD%E5%AD%A6%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E.png"></p>
+<h3 class="atx" id="25-数据补全">2.5 数据补全</h3>
+<p>当前已完成的数据补全如下：</p>
+<h4 class="atx" id="251-中学信息补全v20221213">2.5.1 中学信息补全v20221213</h4>
+<p>对现有宽表中缺失信息较多的100+学校，从其他数据源查找和补全缺少的字段，得到数据表 <strong>中学信息补全v20221213.xlsx</strong>：</p>
+<p><img alt="中学数据补全v20221213.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AD%E5%AD%A6%E6%95%B0%E6%8D%AE%E8%A1%A5%E5%85%A8v20221213.png"></p>
+<h4 class="atx" id="252-中学官网数据补全v20221220">2.5.2 中学官网数据补全v20221220</h4>
+<p>对头部中学里缺少官网信息的学校，从其他数据源进行搜索补充，得到数据表 <strong>中学官网数据补全v20221220.csv</strong>：</p>
+<p><img alt="中学官网数据补全v20221220.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/high_school/%E4%B8%AD%E5%AD%A6%E5%AE%98%E7%BD%91%E6%95%B0%E6%8D%AE%E8%A1%A5%E5%85%A8v20221220.png"></p>
+<h2 class="atx" id="3-教育集团数据收集">3 教育集团数据收集</h2>
+<h3 class="atx" id="31-教育集团数据源清单">3.1 教育集团数据源清单</h3>
+<p>教育集团数据收集过程中积累的数据源信息，汇总成表格 <strong>教育集团数据源清单.xlsx</strong>：</p>
+<p><img alt="教育集团数据源清单.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%BA%90%E6%B8%85%E5%8D%95.png"></p>
+<p>其中内容包括：</p>
+<ul>
+<li><p>数据源名称</p>
+</li>
+<li><p>数据来源</p>
+</li>
+<li><p>数据涉及地区</p>
+</li>
+<li><p>数据内容说明</p>
+</li>
+<li><p>数据网址链接</p>
+</li>
+</ul>
+<h3 class="atx" id="32-教育集团数据收集流程图">3.2 教育集团数据收集流程图</h3>
+<p>教育集团数据收集的流程主要由三部分构成：</p>
+<ul>
+<li><p>头部职业教育集团信息收集</p>
+</li>
+<li><p>头部基础教育集团信息收集</p>
+</li>
+<li><p>教育集团缺失数据增补</p>
+</li>
+</ul>
+<p>流程示意图如下：</p>
+<p><img alt="教育集团信息收集流程v20221223.drawio.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86-%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2/02-%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E6%B5%81%E7%A8%8B/%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E6%B5%81%E7%A8%8Bv20221223.drawio.png"></p>
+<h3 class="atx" id="33-各数据源的数据获取流程">3.3 各数据源的数据获取流程</h3>
+<p>教育集团各数据源的数据获取流程如下：</p>
+<h4 class="atx" id="331-职业教育集团名单">3.3.1 职业教育集团名单</h4>
+<p>访问教育部官网的两个通知页面：</p>
+<ul>
+<li><p><a href="http://www.moe.gov.cn/s78/A07/A07_sjhj/202010/t20201016_495041.html">关于公布第一批示范性职业教育集团（联盟）培育单位名单的通知</a></p>
+<p><img alt="教育部-第一批示范性职业教育集团_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E6%95%99%E8%82%B2%E9%83%A8-%E7%AC%AC%E4%B8%80%E6%89%B9%E7%A4%BA%E8%8C%83%E6%80%A7%E8%81%8C%E4%B8%9A%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2_%E7%BD%91%E9%A1%B5.png"></p>
+</li>
+<li><p><a href="http://www.moe.gov.cn/s78/A07/A07_sjhj/202106/t20210607_536268.html">关于公布第二批示范性职业教育集团（联盟）培育单位名单的通知</a></p>
+<p><img alt="教育部-第二批示范性职业教育集团_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E6%95%99%E8%82%B2%E9%83%A8-%E7%AC%AC%E4%BA%8C%E6%89%B9%E7%A4%BA%E8%8C%83%E6%80%A7%E8%81%8C%E4%B8%9A%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2_%E7%BD%91%E9%A1%B5.png"></p>
+</li>
+</ul>
+<p>可以下载得到两份数据表：</p>
+<ul>
+<li><p><strong>第一批示范性职业教育集团（联盟）培育单位名单.xlsx</strong></p>
+<p><img alt="教育部-第一批示范性职业教育集团_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E6%95%99%E8%82%B2%E9%83%A8-%E7%AC%AC%E4%B8%80%E6%89%B9%E7%A4%BA%E8%8C%83%E6%80%A7%E8%81%8C%E4%B8%9A%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2_%E8%A1%A8%E6%A0%BC.png"></p>
+</li>
+<li><p><strong>第二批示范性职业教育集团（联盟）培育单位名单.xls</strong></p>
+<p><img alt="教育部-第二批示范性职业教育集团_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E6%95%99%E8%82%B2%E9%83%A8-%E7%AC%AC%E4%BA%8C%E6%89%B9%E7%A4%BA%E8%8C%83%E6%80%A7%E8%81%8C%E4%B8%9A%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2_%E8%A1%A8%E6%A0%BC.png"></p>
+</li>
+</ul>
+<p>合并后得到完成的头部职业教育集团名单。</p>
+<h4 class="atx" id="332-基础教育集团名单">3.3.2 基础教育集团名单</h4>
+<p>通过查找各省市教育厅或政府部门公告，寻找基础教育集团的名单信息。以广东省为例，访问 <a href="http://edu.gd.gov.cn/zwgknew/gsgg/content/post_3720723.html">广东省教育厅网站-关于省级优质基础教育集团培育对象名单的公示</a> 页面：</p>
+<p><img alt="广东省教育厅-省级优质基础教育集团_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E5%B9%BF%E4%B8%9C%E7%9C%81%E6%95%99%E8%82%B2%E5%8E%85-%E7%9C%81%E7%BA%A7%E4%BC%98%E8%B4%A8%E5%9F%BA%E7%A1%80%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2_%E7%BD%91%E9%A1%B5.png"></p>
+<p>可以下载得到 <a href="http://edu.gd.gov.cn/attachment/0/476/476904/3720723.docx">省级优质基础教育集团培育对象名单.docx</a>：</p>
+<p><img alt="广东省教育厅-省级优质基础教育集团_文档.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E5%B9%BF%E4%B8%9C%E7%9C%81%E6%95%99%E8%82%B2%E5%8E%85-%E7%9C%81%E7%BA%A7%E4%BC%98%E8%B4%A8%E5%9F%BA%E7%A1%80%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2_%E6%96%87%E6%A1%A3.png"></p>
+<p>整理并补充更多字段信息后，得到数据表 <strong>基础+职业教育集团信息补全_YS_20221214.xlsx</strong>：</p>
+<p><img alt="基础教育集团_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E5%9F%BA%E7%A1%80%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2_%E8%A1%A8%E6%A0%BC.png"></p>
+<p>其他省市的基础教育集团信息按照类似流程进行收集整理。</p>
+<h3 class="atx" id="34-教育集团宽表构建">3.4 教育集团宽表构建</h3>
+<p>使用 <strong><em>教育集团宽表构建.ipynb</em></strong> 的代码，进行全部数据的合并，得到 <strong>教育集团数据宽表.xlsx</strong>：</p>
+<p><img alt="教育集团数据宽表.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8.png"></p>
+<p>数据处理与合并过程中应用的方法与逻辑，已在代码中通过逐行注释的方式进行呈现，构成本文档的一部分补充内容，在文档正文中不再占用过多篇幅进行展开介绍。</p>
+<p>宽表中各字段的含义和数据样例，可参考 <strong>教育集团数据宽表字段说明.xlsx</strong>：</p>
+<p><img alt="教育集团数据宽表字段说明.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E.png"></p>
+<h3 class="atx" id="35-数据补全">3.5 数据补全</h3>
+<p>当前已完成的数据补全如下：</p>
+<h4 class="atx" id="351-职业教育集团信息补全_ljj_20221215">3.5.1 职业教育集团信息补全_LJJ_20221215</h4>
+<p>对现有宽表中缺失成员信息的职业教育集团，从其他数据源查找和补全缺少的字段，得到数据表 <strong>职业教育集团信息补全_LJJ_20221215.xlsx</strong>：</p>
+<p><img alt="职业教育集团信息补全_LJJ_20221215.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E8%81%8C%E4%B8%9A%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2%E4%BF%A1%E6%81%AF%E8%A1%A5%E5%85%A8_LJJ_20221215.png"></p>
+<h4 class="atx" id="352-基础教育集团信息补全_ljj_20221216">3.5.2 基础教育集团信息补全_LJJ_20221216</h4>
+<p>对现有宽表中缺失成员信息的基础教育集团，从其他数据源查找和补全缺少的字段，得到数据表 <strong>基础教育集团信息补全_LJJ_20221216.xlsx</strong>：</p>
+<p><img alt="基础教育集团信息补全_LJJ_20221216.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_group/%E5%9F%BA%E7%A1%80%E6%95%99%E8%82%B2%E9%9B%86%E5%9B%A2%E4%BF%A1%E6%81%AF%E8%A1%A5%E5%85%A8_LJJ_20221216.png"></p>
+<h2 class="atx" id="4-校外教培数据收集">4 校外教培数据收集</h2>
+<h3 class="atx" id="41-校外教培数据源清单">4.1 校外教培数据源清单</h3>
+<p>校外教培数据收集过程中积累的数据源信息，汇总成表格 <strong>校外教培数据源清单.xlsx</strong>：</p>
+<p><img alt="校外教培数据源清单.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E6%A0%A1%E5%A4%96%E6%95%99%E5%9F%B9%E6%95%B0%E6%8D%AE%E6%BA%90%E6%B8%85%E5%8D%95.png"></p>
+<p>其中内容包括：</p>
+<ul>
+<li><p>数据源名称</p>
+</li>
+<li><p>数据来源</p>
+</li>
+<li><p>数据涉及地区</p>
+</li>
+<li><p>数据内容说明</p>
+</li>
+<li><p>数据网址链接</p>
+</li>
+</ul>
+<h3 class="atx" id="42-校外教培数据收集流程图">4.2 校外教培数据收集流程图</h3>
+<p>校外教培数据收集的流程主要由三部分构成：</p>
+<ul>
+<li><p>教培机构信息收集</p>
+</li>
+<li><p>教培品牌信息收集</p>
+</li>
+<li><p>缺失信息人工补全</p>
+</li>
+</ul>
+<p>流程示意图如下：</p>
+<p><img alt="校外教培信息收集流程v20221220.drawio.svg" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86-%E6%A0%A1%E5%A4%96%E6%95%99%E5%9F%B9/02-%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E6%B5%81%E7%A8%8B/%E6%A0%A1%E5%A4%96%E6%95%99%E5%9F%B9%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E6%B5%81%E7%A8%8Bv20221220.drawio.svg"></p>
+<h3 class="atx" id="43-各数据源的数据获取流程">4.3 各数据源的数据获取流程</h3>
+<p>校外教培各数据源的数据获取流程如下：</p>
+<h4 class="atx" id="431-教育部校外培训机构名单">4.3.1 教育部校外培训机构名单</h4>
+<p>访问 <a href="https://xwpx.eduyun.cn/bmp-web/tolSpInfo/index">全国校外教育培训监管与服务综合平台-机构查询</a> 页面：</p>
+<p><img alt="全国校外教育培训监管与服务综合平台-机构查询1.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E5%85%A8%E5%9B%BD%E6%A0%A1%E5%A4%96%E6%95%99%E8%82%B2%E5%9F%B9%E8%AE%AD%E7%9B%91%E7%AE%A1%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E5%B9%B3%E5%8F%B0-%E6%9C%BA%E6%9E%84%E6%9F%A5%E8%AF%A21.png"></p>
+<p>可以按照区域、培训形式、培训类型等筛选条件查询机构信息：</p>
+<p><img alt="全国校外教育培训监管与服务综合平台-机构查询2.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E5%85%A8%E5%9B%BD%E6%A0%A1%E5%A4%96%E6%95%99%E8%82%B2%E5%9F%B9%E8%AE%AD%E7%9B%91%E7%AE%A1%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E5%B9%B3%E5%8F%B0-%E6%9C%BA%E6%9E%84%E6%9F%A5%E8%AF%A22.png"></p>
+<p>从查询结果中，能够收集到的信息包括：</p>
+<ul>
+<li><p>培训机构名称</p>
+</li>
+<li><p>区域</p>
+</li>
+<li><p>培训形式</p>
+</li>
+<li><p>培训类型</p>
+</li>
+<li><p>学段</p>
+</li>
+<li><p>执照</p>
+</li>
+<li><p>办学许可证</p>
+</li>
+</ul>
+<p>按不同省份/直辖市整理后得到一批数据表  <strong>教培大全_省/市名称.xlsx</strong>：</p>
+<p><img alt="全国校外教育培训监管与服务综合平台-机构查询_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E5%85%A8%E5%9B%BD%E6%A0%A1%E5%A4%96%E6%95%99%E8%82%B2%E5%9F%B9%E8%AE%AD%E7%9B%91%E7%AE%A1%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E5%B9%B3%E5%8F%B0-%E6%9C%BA%E6%9E%84%E6%9F%A5%E8%AF%A2_%E8%A1%A8%E6%A0%BC.png"></p>
+<h4 class="atx" id="432-我要搜学网-培训机构信息表">4.3.2 我要搜学网-培训机构信息表</h4>
+<p>访问 <a href="http://xuexiao.51sxue.com/slist/?t=5&amp;areaCodeS=">我要搜学网-全国培训机构学校列表</a> 页面：</p>
+<p><img alt="我要搜学网-全国培训机构学校列表.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E6%88%91%E8%A6%81%E6%90%9C%E5%AD%A6%E7%BD%91-%E5%85%A8%E5%9B%BD%E5%9F%B9%E8%AE%AD%E6%9C%BA%E6%9E%84%E5%AD%A6%E6%A0%A1%E5%88%97%E8%A1%A8.png"></p>
+<p>列表中能够获取到的信息包括：</p>
+<ul>
+<li><p>培训机构名称</p>
+</li>
+<li><p>地区</p>
+</li>
+<li><p>属性</p>
+</li>
+<li><p>性质</p>
+</li>
+<li><p>类型</p>
+</li>
+<li><p>学校地址</p>
+</li>
+<li><p>联系电话</p>
+</li>
+</ul>
+<p>整理后得到数据表 <strong>我要搜学网-培训机构信息表.csv</strong>：</p>
+<p><img alt="我要搜学网-培训机构信息表.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E6%88%91%E8%A6%81%E6%90%9C%E5%AD%A6%E7%BD%91-%E5%9F%B9%E8%AE%AD%E6%9C%BA%E6%9E%84%E4%BF%A1%E6%81%AF%E8%A1%A8.png"></p>
+<h4 class="atx" id="433-学校大全-培训机构信息表">4.3.3 学校大全-培训机构信息表</h4>
+<p>以北京市为例，访问 <a href="http://beijing.xuexiaodaquan.com/peixunjigou/">学校大全-北京培训机构大全</a> 页面：</p>
+<p><img alt="学校大全-北京培训机构大全.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E5%AD%A6%E6%A0%A1%E5%A4%A7%E5%85%A8-%E5%8C%97%E4%BA%AC%E5%9F%B9%E8%AE%AD%E6%9C%BA%E6%9E%84%E5%A4%A7%E5%85%A8.png"></p>
+<p>从收录的培训机构列表中，可以获得的信息有：</p>
+<ul>
+<li><p>培训机构名称</p>
+</li>
+<li><p>地址</p>
+</li>
+<li><p>电话</p>
+</li>
+<li><p>网址</p>
+</li>
+</ul>
+<p>其他省市的培训机构大全按类似流程获取，整理后得到数据表 <strong>学校大全-培训机构信息表.csv</strong>：</p>
+<p><img alt="学校大全-培训机构信息表.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E5%AD%A6%E6%A0%A1%E5%A4%A7%E5%85%A8-%E5%9F%B9%E8%AE%AD%E6%9C%BA%E6%9E%84%E4%BF%A1%E6%81%AF%E8%A1%A8.png"></p>
+<h4 class="atx" id="434-买购网-各类教培品牌榜单">4.3.4 买购网-各类教培品牌榜单</h4>
+<h5 class="atx" id="4341-民办培训品牌大全">4.3.4.1 民办培训品牌大全</h5>
+<p>访问 <a href="https://www.maigoo.com/brand/search/?catid=1707">买购网-品牌大全-民办培训</a> 页面：</p>
+<p><img alt="买购网-教培品牌大全_网页.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E6%95%99%E5%9F%B9%E5%93%81%E7%89%8C%E5%A4%A7%E5%85%A8_%E7%BD%91%E9%A1%B5.png"></p>
+<p>从对应搜索结果列表中，可以获得的信息有：</p>
+<ul>
+<li><p>民办培训品牌名称</p>
+</li>
+<li><p>品牌类型</p>
+</li>
+<li><p>所属公司</p>
+</li>
+<li><p>品牌的买购网链接</p>
+</li>
+<li><p>品牌简介</p>
+</li>
+</ul>
+<p>整理后得到数据表 <strong>买购网-教培品牌大全.xlsx</strong>：</p>
+<p><img alt="买购网-教培品牌大全_表格.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E6%95%99%E5%9F%B9%E5%93%81%E7%89%8C%E5%A4%A7%E5%85%A8_%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 class="atx" id="4342-教培品牌细分类top10名单">4.3.4.2 教培品牌细分类top10名单</h5>
+<p>访问 <a href="https://www.maigoo.com/best/15520.html">买购网-2022教育培训机构十大品牌排行榜</a> 页面：</p>
+<p><img alt="买购网-考研培训十大品牌.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E8%80%83%E7%A0%94%E5%9F%B9%E8%AE%AD%E5%8D%81%E5%A4%A7%E5%93%81%E7%89%8C.png"></p>
+<p>以”考研培训“类为例，翻到”考研培训十大品牌“章节，可找到对应的品牌名称，其他分类的十大品牌按类似方式收集，整理后得到数据表 <strong>买购网-教培品牌细分类top10名单.xlsx</strong>：</p>
+<p><img alt="买购网-教培品牌细分类top10名单.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E6%95%99%E5%9F%B9%E5%93%81%E7%89%8C%E7%BB%86%E5%88%86%E7%B1%BBtop10%E5%90%8D%E5%8D%95.png"></p>
+<h5 class="atx" id="4343-头部城市教培品牌top10名单">4.3.4.3 头部城市教培品牌top10名单</h5>
+<p>以西安市为例，访问 <a href="https://www.maigoo.com/maigoo/5647xapxjg_index.html">买购网-十大西安培训机构排行</a> 页面：</p>
+<p><img alt="买购网-十大西安培训机构排行.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E5%8D%81%E5%A4%A7%E8%A5%BF%E5%AE%89%E5%9F%B9%E8%AE%AD%E6%9C%BA%E6%9E%84%E6%8E%92%E8%A1%8C.png"></p>
+<p>可以找到上榜的品牌名称，其他头部城市榜单按照类似方式收集，整理后得到数据表 <strong>买购网-头部城市教培品牌top10名单.xlsx</strong>：</p>
+<p><img alt="买购网-头部城市教培品牌top10名单.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E4%B9%B0%E8%B4%AD%E7%BD%91-%E5%A4%B4%E9%83%A8%E5%9F%8E%E5%B8%82%E6%95%99%E5%9F%B9%E5%93%81%E7%89%8Ctop10%E5%90%8D%E5%8D%95.png"></p>
+<h4 class="atx" id="435-品牌网-教培品牌大全">4.3.5 品牌网-教培品牌大全</h4>
+<p>访问 <a href="https://www.chinapp.com/pinpai/jiaoyupeixun.html">品牌网-教育培训品牌大全</a> 页面：</p>
+<p><img alt="品牌网-教育培训品牌大全.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E5%93%81%E7%89%8C%E7%BD%91-%E6%95%99%E8%82%B2%E5%9F%B9%E8%AE%AD%E5%93%81%E7%89%8C%E5%A4%A7%E5%85%A8.png"></p>
+<p>可以找到收录的全部教培品牌，对于每个品牌，点击“查看品牌详情”可以进入对应的品牌信息页面：</p>
+<p><img alt="品牌网-品牌信息和介绍.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E5%93%81%E7%89%8C%E7%BD%91-%E5%93%81%E7%89%8C%E4%BF%A1%E6%81%AF%E5%92%8C%E4%BB%8B%E7%BB%8D.png"></p>
+<p>其中包含的信息有：</p>
+<ul>
+<li><p>品牌名称</p>
+</li>
+<li><p>所属公司</p>
+</li>
+<li><p>法人代表</p>
+</li>
+<li><p>品牌发源地</p>
+</li>
+<li><p>品牌创立时间</p>
+</li>
+<li><p>官方网站</p>
+</li>
+<li><p>主营产品</p>
+</li>
+<li><p>文字介绍</p>
+</li>
+</ul>
+<p>整理后得到数据表 <strong>品牌网-教培品牌大全.xlsx</strong>：</p>
+<p><img alt="品牌网-教培品牌大全.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E5%93%81%E7%89%8C%E7%BD%91-%E6%95%99%E5%9F%B9%E5%93%81%E7%89%8C%E5%A4%A7%E5%85%A8.png"></p>
+<h3 class="atx" id="44-校外教培宽表构建">4.4 校外教培宽表构建</h3>
+<p>使用 <strong><em>校外教培宽表构建.ipynb</em></strong> 的代码，进行全部数据的合并，得到：</p>
+<ul>
+<li><p><strong>校外教培机构数据宽表.csv</strong></p>
+<p><img alt="校外教培机构数据宽表.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E6%A0%A1%E5%A4%96%E6%95%99%E5%9F%B9%E6%9C%BA%E6%9E%84%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8.png"></p>
+</li>
+<li><p><strong>校外教培品牌数据宽表.csv</strong></p>
+<p><img alt="校外教培品牌数据宽表.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E6%A0%A1%E5%A4%96%E6%95%99%E5%9F%B9%E5%93%81%E7%89%8C%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8.png"></p>
+</li>
+</ul>
+<p>数据处理与合并过程中应用的方法与逻辑，已在代码中通过逐行注释的方式进行呈现，构成本文档的一部分补充内容，在文档正文中不再占用过多篇幅进行展开介绍。</p>
+<p>宽表中各字段的含义和数据样例，可参考：</p>
+<ul>
+<li><p><strong>校外教培机构数据宽表字段说明.xlsx</strong></p>
+<p><img alt="校外教培机构数据宽表字段说明.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E6%A0%A1%E5%A4%96%E6%95%99%E5%9F%B9%E6%9C%BA%E6%9E%84%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E.png"></p>
+</li>
+<li><p><strong>校外教培品牌数据宽表字段说明.xlsx</strong></p>
+<p><img alt="校外教培品牌数据宽表字段说明.png" src="file:///Users/zhangchi/weiyun/SENSES/%E9%A1%B9%E7%9B%AE/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E6%95%99%E8%82%B2%E5%9C%BA%E6%99%AF%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8%E5%92%A8%E8%AF%A2%E9%A1%B9%E7%9B%AE/%E5%A4%96%E9%83%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/images/educational_training/%E6%A0%A1%E5%A4%96%E6%95%99%E5%9F%B9%E5%93%81%E7%89%8C%E6%95%B0%E6%8D%AE%E5%AE%BD%E8%A1%A8%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E.png"></p>
+</li>
+</ul>
+<h2 class="atx" id="5-贡献者与鸣谢名单">5 贡献者与鸣谢名单</h2>
+<table>
+<thead>
+<tr>
+<th>项目模块</th>
+<th>内容</th>
+<th>贡献者</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>高等教育</td>
+<td>高校学校分类名单整理（211/985/双一流等）<br>高等教育宽表缺失字段补全</td>
+<td>王欢<br>刘军杰</td>
+</tr>
+<tr>
+<td>中等教育</td>
+<td>全国/各省中学排名信息整理<br>中学宽表缺失字段补全<br>我要搜学网/学校大全网中学信息获取<br>头部中学官网信息补全<br>中学名称匹配优化<br>职教网中职学校信息获取<br>中学经纬度信息收集</td>
+<td>王欢<br>王欢<br>赵梦戈<br>赵梦戈<br>赵梦戈，刘军杰<br>赵梦戈<br>闫松，赵梦戈</td>
+</tr>
+<tr>
+<td>教育集团</td>
+<td>基础/职业教育集团信息整理<br>基础/职业教育集团缺失信息补全</td>
+<td>闫松<br>闫松，刘军杰</td>
+</tr>
+<tr>
+<td>校外教培</td>
+<td>校外培训机构监管平台机构信息获取<br>我要搜学网/学校大全网培训机构信息获取<br>买购网/品牌网教培品牌信息收集</td>
+<td>闫松，刘军杰<br>赵梦戈<br>闫松</td>
+</tr>
+</tbody></table>
+</article>
+</body>
+</html>
